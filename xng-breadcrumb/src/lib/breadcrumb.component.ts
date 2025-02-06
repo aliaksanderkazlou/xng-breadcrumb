@@ -1,10 +1,11 @@
 import { Component, ContentChild, Input, OnInit, TemplateRef, ViewEncapsulation } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute, RouterModule } from '@angular/router';
-import { Observable, map } from 'rxjs';
+import { Observable } from 'rxjs';
 import { BreadcrumbItemDirective } from './breadcrumb-item.directive';
 import { BreadcrumbService } from './breadcrumb.service';
 import { BreadcrumbDefinition } from './types';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'xng-breadcrumb',
